@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232E33"
+    android:orientation="vertical"
+    android:paddingBottom="18dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="18dp"
+    tools:context="mrs.com.porcent.Porcentagem"
+    tools:deviceIds="wear_round">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#232E33"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtValor1"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="4"
+            android:backgroundTint="?android:attr/textColorHighlight"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="end"
+            android:inputType="numberDecimal|numberSigned"
+            android:labelFor="@id/edtValor1"
+            android:maxLength="10"
+            android:nextFocusDown="@+id/edtValor2"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/porcento_de"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtValor2"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="4"
+            android:backgroundTint="?android:attr/textColorHighlight"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:inputType="numberDecimal|numberSigned"
+            android:labelFor="@+id/edtValor2"
+            android:maxLength="10"
+            android:nextFocusDown="@+id/edtValor3"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#232E33"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtResult"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?android:attr/textColorHighlight"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:inputType="numberDecimal|numberSigned"
+            android:labelFor="@+id/edtResult"
+            android:maxLength="10"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:textColor="@android:color/white"
+            android:textIsSelectable="true"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#232E33"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLimpar"
+            style="@android:style/Widget.Material.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="#327896"
+            android:backgroundTint="#327896"
+            android:fontFamily="sans-serif"
+            android:onClick="limpar"
+            android:text="@string/limpar"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            style="@android:style/Widget.Material.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="#327896"
+            android:backgroundTint="#327896"
+            android:fontFamily="sans-serif"
+            android:onClick="calcular"
+            android:text="@string/calcular"
+            android:textAppearance="@style/TextAppearance.Wearable.Small"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

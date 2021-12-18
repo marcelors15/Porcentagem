@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "mrs.com.porcent"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        mobile {
+            applicationId "mrs.com.porcent"
+            minSdkVersion 21
+            targetSdkVersion 31
+            versionCode 1
+            versionName '1.0'
+            dimension "default"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    //wearApp project(':wear')
+    wearApp project(path: ':wear', configuration: 'wear1Release')
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+}

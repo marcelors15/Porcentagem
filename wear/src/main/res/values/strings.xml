@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Percentage</string>
+
+    <string name="limpar">Clean</string>
+    <string name="calcular">Calculate</string>
+
+    <string name="campo_vazio">The field is empty</string>
+    <string name="valor_invalido">Invalid value</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="ponto">.</string>
+
+    <string name="porcento_de">% of</string>
+</resources>

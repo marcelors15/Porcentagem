@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Percentage</string>
+    <string name="limpar">Clean</string>
+    <string name="calcular">Calculate</string>
+    <string name="campo_vazio">The field is empty</string>
+    <string name="valor_invalido">Invalid value</string>
+
+    <string name="porcento_de">% of</string>
+</resources>
